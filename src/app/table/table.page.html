@@ -1,0 +1,166 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Table</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-row class="data-table">
+    <ion-col class="data-col ion-text-center">
+      <div class="title">
+        Task Date
+      </div>
+
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'AscsortedTask' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupTask()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'DescsortedTask' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownTask()"
+        ></div>
+      </div>
+    </ion-col>
+    <ion-col class="data-col ion-text-center">
+      <div class="title">Over Speed</div>
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'Ascsortedoverspeed' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupOverSpeed()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'Descsortedoverspeed' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownOverSpeed()"
+        ></div>
+      </div>
+    </ion-col>
+    <ion-col class="data-col ion-text-center">
+      <div class="title">Posted Speed</div>
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'AscsortedPostedspeed' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupPostedSpeed()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'DescsortedPostedspeed' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownPostedSpeed()"
+        ></div>
+      </div>
+    </ion-col>
+    <ion-col class="data-col ion-text-center">
+      <div class="title">Duration</div>
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'AscsortedDuration' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupDuration()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'DescsortedDuration' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownDuration()"
+        ></div>
+      </div>
+    </ion-col>
+    <ion-col class="data-col ion-text-center">
+      <div class="title">Start Time</div>
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'AscsortedStartTime' ? '7px
+          solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupStartTime()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'DescsortedStartTime' ? '7px
+        solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownStartTime()"
+        ></div>
+      </div>
+    </ion-col>
+    <ion-col class="data-col ion-text-center">
+      <div class="title">End Time</div>
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'AscsortedEndTime' ? '7px
+        solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupEndTime()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'DescsortedEndTime' ? '7px
+        solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownEndTime()"
+        ></div>
+      </div>
+    </ion-col>
+    <ion-col class="data-col ion-text-center">
+      <div class="title">Result</div>
+      <div class="arrow">
+        <div
+          class="arrow-up"
+          [ngStyle]="{'border-bottom': sort === 'AscsortedResult' ? '7px
+        solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickupResult()"
+        ></div>
+        <div
+          class="arrow-down"
+          [ngStyle]="{'border-top': sort === 'DescsortedResult' ? '7px
+        solid rgb(36, 77, 165)' : ''}"
+          (click)="onClickDownResult()"
+        ></div>
+      </div>
+    </ion-col>
+  </ion-row>
+  <ion-row class="data-table" *ngFor="let data of tabledata">
+    <ion-col class="ion-text-center cell-class">
+      {{data.task_date}}
+    </ion-col>
+    <ion-col class="ion-text-center cell-class">
+      {{data.Over_speed}}
+    </ion-col>
+    <ion-col class="ion-text-center cell-class">
+      {{data.posted_speed}}
+    </ion-col>
+    <ion-col class="ion-text-center cell-class">
+      {{data.Duration}}
+    </ion-col>
+    <ion-col class="ion-text-center cell-class">
+      {{data.start_time}}
+    </ion-col>
+    <ion-col class="ion-text-center cell-class">
+      {{data.end_time}}
+    </ion-col>
+    <ion-col class="ion-text-center cell-class">
+      "result TBU"
+    </ion-col>
+  </ion-row>
+
+  <div class="expand">
+    <div
+      *ngIf="expanded==false; else arrowup"
+      class="arrow-down"
+      (click)="onClickExpand()"
+    ></div>
+    <ng-template #arrowup>
+      <div class="arrow-up" (click)="onClickCollapse()"></div>
+    </ng-template>
+  </div>
+</ion-content>

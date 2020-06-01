@@ -1,0 +1,62 @@
+[
+  {
+    "latitude": 27.959847,
+    "longitude": -82.442618,
+    "Bus": "51531B",
+    "Date": "05/04/20",
+    "startTime": "8:15AM",
+    "Duration": "8",
+    "Location": "Florida",
+    "Magnitude": 2
+  },
+  {
+    "latitude": 27.885829,
+    "longitude": -82.361594,
+    "Bus": "51531B",
+    "Date": "05/04/20",
+    "startTime": "8:15AM",
+    "Duration": "8",
+    "Location": "Florida",
+    "Magnitude": 4
+  },
+  {
+    "latitude": 27.866406,
+    "longitude": -82.38494,
+    "Bus": "51531B",
+    "Date": "06/04/20",
+    "startTime": "8:15AM",
+    "Duration": "8",
+    "Location": "Florida",
+    "Magnitude": 6
+  },
+  {
+    "latitude": 27.854872,
+    "longitude": -82.379447,
+    "Bus": "51531B",
+    "Date": "07/04/20",
+    "startTime": "8:15AM",
+    "Duration": "8",
+    "Location": "Florida",
+    "Magnitude": 8
+  },
+  {
+    "latitude": 27.878601,
+    "longitude": -82.369211,
+    "Bus": "51531B",
+    "Date": "08/04/20",
+    "startTime": "8:15AM",
+    "Duration": "8",
+    "Location": "Florida",
+    "Magnitude": 10
+  },
+  {
+    "latitude": 27.872371,
+    "longitude": -82.360813,
+    "Bus": "51531B",
+    "Date": "09/04/20",
+    "startTime": "8:15AM",
+    "Duration": "8",
+    "Location": "Florida",
+    "Magnitude": 12
+  }
+]

@@ -1,0 +1,270 @@
+<ion-content class="score-details">
+  <div class="driver-details-main">
+    <div class="driver-details-sub">
+      <div class="driver-details-left">
+        <div class="four-star-rating-color-indicator float-l"></div>
+        <div class="driver-details-left-title">
+          <p class="driver-name">
+            Alesia <span class="bold-700"> Wright </span>
+          </p>
+        </div>
+        <div class="driver-details-tred-icon">
+          <img src="../../assets/svg/Score trend button.svg" alt="" />
+        </div>
+        <div class="start-rating-main">
+          <img src="../../assets/svg/Rating_stars.svg" alt="" />
+        </div>
+
+        <div class="driver_events_main">
+          <div class="driver_events_sub_main left-events">
+            <div class="driver-event-main">
+              <input
+                id="speeding"
+                class="radio-custom"
+                name="radio-group"
+                type="radio"
+                checked
+              />
+              <label for="speeding" class="event-label">Speeding</label>
+              <div class="slider-eve">
+                <ng5-slider
+                  [(value)]="value"
+                  [options]="options"
+                  disabled
+                ></ng5-slider>
+              </div>
+            </div>
+            <div class="driver-event-main">
+              <input
+                id="idling"
+                class="radio-custom"
+                name="radio-group"
+                type="radio"
+              />
+              <label for="idling" class="event-label">Idling</label>
+              <div class="slider-eve">
+                <ng5-slider
+                  [(value)]="value2"
+                  [options]="options"
+                  disabled
+                ></ng5-slider>
+              </div>
+            </div>
+            <div class="driver-event-main">
+              <input
+                id="rapidAccel"
+                class="radio-custom"
+                name="radio-group"
+                type="radio"
+              />
+              <label for="rapidAccel" class="event-label">Rapid Accel</label>
+              <div class="slider-eve">
+                <ng5-slider
+                  [(value)]="value3"
+                  [options]="options"
+                  disabled
+                ></ng5-slider>
+              </div>
+            </div>
+            <div class="driver-event-main">
+              <input
+                id="hardBrake"
+                class="radio-custom"
+                name="radio-group"
+                type="radio"
+              />
+              <label for="hardBrake" class="event-label">Hard Brake</label>
+              <div class="slider-eve">
+                <ng5-slider
+                  [(value)]="value4"
+                  [options]="options"
+                  disabled
+                ></ng5-slider>
+              </div>
+            </div>
+          </div>
+
+          <div class="add-coaching-notes-main">
+            <p>
+              <img
+                src="../../assets/svg/baseball (1).svg"
+                class="coach-notes-icon"
+                alt=""
+              />
+              <span class="coaching-notes-title"> Coaching Session</span>
+              <span class="date-coach"
+                >5/15/2020
+                <img
+                  src="../../assets/svg/Calendar date icon.svg"
+                  class="coach-date-icon"
+                  alt=""
+              /></span>
+            </p>
+
+            <div class="coaching-notes-sub">
+              <div class="events-icons-coach">
+                <div class="speeding-event-cb">
+                  <input
+                    type="checkbox"
+                    class="check-with-events-icon"
+                    id="idinput-sp"
+                    checked
+                  />
+                  <label class="label-for-check" for="idinput-sp">
+                    <img
+                      src="../../assets/svg/Speeding icon.svg"
+                      class="sp-icon-coach sp-unselect"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/svg/Speeding_icon_white.svg"
+                      class="sp-icon-coach sp-selected"
+                      alt=""
+                    />
+                  </label>
+                </div>
+
+                <div class="idling-event-cb">
+                  <input
+                    type="checkbox"
+                    class="check-with-events-icon"
+                    id="idinput-id"
+                  />
+                  <label class="label-for-check" for="idinput-id">
+                    <img
+                      src="../../assets/svg/Idling icon.svg"
+                      class="sp-icon-coach sp-unselect idling-icon"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/svg/Idling_icon_white.svg"
+                      class="sp-icon-coach idling-icon sp-selected"
+                      alt=""
+                    />
+                  </label>
+                </div>
+
+                <div class="rapid-event-cb">
+                  <input
+                    type="checkbox"
+                    class="check-with-events-icon"
+                    id="idinput-rapid"
+                  />
+                  <label class="label-for-check" for="idinput-rapid">
+                    <img
+                      src="../../assets/svg/Rapid Accel icon.svg"
+                      class="sp-icon-coach sp-unselect rapid-icon"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/svg/Rapid_Accel_icon_white.svg"
+                      class="sp-icon-coach rapid-icon sp-selected"
+                      alt=""
+                    />
+                  </label>
+                </div>
+
+                <div class="hard-event-cb">
+                  <input
+                    type="checkbox"
+                    class="check-with-events-icon"
+                    id="idinput-hard"
+                  />
+                  <label class="label-for-check" for="idinput-hard">
+                    <img
+                      src="../../assets/svg/hard brake.svg"
+                      class="sp-icon-coach sp-unselect"
+                      alt=""
+                    />
+                    <img
+                      src="../../assets/svg/hard_brake_white.svg"
+                      class="sp-icon-coach sp-selected"
+                      alt=""
+                    />
+                  </label>
+                </div>
+              </div>
+              <div class="events-add-coach">
+                <textarea class="add-coaching-note-ta">
+Add your comments here…</textarea
+                >
+                <div class="action_button">
+                  <a class="buttons-cancel"> Cancel </a>
+                  <a class="buttons-submit"> Submit </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="coaching-notes-list-main">
+            <p>
+              <img
+                src="../../assets/svg/baseball (1).svg"
+                class="coach-notes-icon"
+                alt=""
+              />
+              <span class="coaching-notes-title"> Coaching Notes</span>
+              <span class="date-coach"
+                ><img
+                  src="../../assets/svg/Calendar date icon.svg"
+                  class="coach-date-icon"
+                  alt=""
+              /></span>
+            </p>
+
+            <div class="coaching-nots-list-sub">
+              <div class="coaching_notes_seperator">
+                <div class="separator"></div>
+
+                <div class="coaching-notes-content">
+                  <p class="events_names">Idling, speeding, rapid accel:</p>
+                  <p class="coaching-notes">
+                    Lorem ipsum dolor sit amet ...
+                    <span class="more">more</span>
+                  </p>
+                </div>
+                <div class="coaching-notes-date">
+                  <span class="date-coach">5/15/2020 </span>
+                </div>
+              </div>
+              <div class="coaching_notes_seperator">
+                <div class="separator"></div>
+
+                <div class="coaching-notes-content">
+                  <p class="events_names">Idling, speeding, rapid accel:</p>
+                  <p class="coaching-notes">
+                    Lorem ipsum dolor sit amet ...
+                    <span class="more">more</span>
+                  </p>
+                </div>
+                <div class="coaching-notes-date">
+                  <span class="date-coach">5/15/2020 </span>
+                </div>
+              </div>
+              <div class="coaching_notes_seperator">
+                <div class="separator"></div>
+                <div class="coaching-notes-content">
+                  <p class="events_names">Idling, speeding, rapid accel:</p>
+                  <p class="coaching-notes">
+                    Lorem ipsum dolor sit amet ...
+                    <span class="more">more</span>
+                  </p>
+                </div>
+                <div class="coaching-notes-date">
+                  <span class="date-coach">5/15/2020 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="driver-details-right">
+      <div #map id="map" class="trimblemaps-map"></div>
+      <div class="map-dots"></div>
+    </div>
+    <div class="driver-details-right">
+      <ng2-smart-table [settings]="settings" [source]="data"></ng2-smart-table>
+    </div>
+  </div>
+</ion-content>
